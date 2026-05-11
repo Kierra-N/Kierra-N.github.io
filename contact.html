@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Required Element: Mobile Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sims Player Survey</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tutorial 9 Requirement: JavaScript File -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sims Player Survey</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sims.html">Sims</a>
+            <a href="fortnite.html">Fortnite</a>
+            <a href="contact.html">Survey</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Required Element: Multiple Fieldsets -->
+        <form>
+
+            <fieldset>
+                <legend>Player Information</legend>
+
+                <!-- Required Element: Text Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" required minlength="3">
+
+                <br><br>
+
+                <!-- Required Element: Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <br><br>
+
+                <!-- Required Element: Date Input -->
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday">
+
+                <br><br>
+
+                <!-- Required Element: Spinner -->
+                <label for="hours">Hours Played:</label>
+                <input type="number" id="hours" min="1" max="1000">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Favorite Games</legend>
+
+                <!-- Required Element: Radio Buttons -->
+                <p>Favorite Game:</p>
+
+                <input type="radio" name="game"> Sims 4
+                <input type="radio" name="game"> Fortnite
+                <input type="radio" name="game"> Minecraft
+
+                <br><br>
+
+                <!-- Required Element: Checkboxes -->
+                <p>Platforms Used:</p>
+
+                <input type="checkbox"> PC
+                <input type="checkbox"> Xbox
+                <input type="checkbox"> PlayStation
+                <input type="checkbox"> Switch
+
+                <br><br>
+
+                <!-- Required Element: Range Slider -->
+                <label for="rating">Gaming Rating:</label>
+                <input type="range" id="rating" min="1" max="10">
+
+                <br><br>
+
+                <!-- Required Element: Selection List -->
+                <label for="packs">Favorite Sims Pack:</label>
+
+                <select id="packs">
+                    <option>Seasons</option>
+                    <option>Cats and Dogs</option>
+                    <option>Discover University</option>
+                    <option>City Living</option>
+                </select>
+
+                <br><br>
+
+                <!-- Required Element: Datalist -->
+                <label for="career">Favorite Career:</label>
+
+                <input list="careers" id="career">
+
+                <datalist id="careers">
+                    <option value="Doctor">
+                    <option value="Chef">
+                    <option value="Artist">
+                    <option value="Scientist">
+                </datalist>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <!-- Required Element: Text Area -->
+                <legend>Comments</legend>
+
+                <textarea rows="6" cols="40"
+                    placeholder="Tell us your favorite Sims gameplay moments!"></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <!-- Required Element: Submit Button -->
+            <input type="submit" value="Submit">
+
+            <!-- Required Element: Reset Button -->
+            <input type="reset" value="Reset">
+
+        </form>
+
+        <br><br>
+
+        <!-- Tutorial 9 Requirement: Alert -->
+        <button onclick="showAlert()">Click for Bonus Message</button>
+
+        <br><br>
+
+        <!-- Tutorial 9 Requirement: Countdown -->
+        <h2 id="countdown"></h2>
+
+        <!-- Tutorial 9 Requirement: Current Time -->
+        <h2 id="time"></h2>
+
+    </main>
+
+</body>
+
+</html>
