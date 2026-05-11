@@ -1,0 +1,85 @@
+/* Format background and text */
+body {
+   background-color: #fff7fb;
+   color: #333;
+   font-family: "Segoe UI", "Comic Sans MS", cursive;
+   margin: 0;
+}
+
+/* Header */
+header {
+   background: linear-gradient(to right, #ff99cc, #ff9f1c);
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   background-color: #c77dff;
+   display: flex;
+   justify-content: center;
+}
+
+nav li {
+   margin: 0;
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   padding: 15px;
+   display: block;
+}
+
+/* Pseudo class */
+nav a:hover {
+   background-color: #ff9f1c;
+}
+
+/* Headings */
+h1, h2 {
+   color: #c77dff;
+}
+
+/* Lists */
+.game-list {
+   background-color: #ffe6f2;
+   padding: 15px;
+   border-left: 6px solid #ff9f1c;
+}
+
+/* Images */
+img {
+   max-width: 100%;
+}
+
+/* Footer */
+footer {
+   background: linear-gradient(to right, #ff9f1c, #ff99cc);
+   color: white;
+   text-align: center;
+   padding: 10px;
+}
+
+/* Pseudo element */
+p::first-letter {
+   color: #ff66b3;
+   font-size: 1.1em;
+}
+
+/* Contextual selector */
+section p {
+   line-height: 1.6;
+}
+
+/* Attribute selector */
+input[type="submit"] {
+   background-color: #c77dff;
+   color: white;
+   padding: 10px;
+   border: none;
+}
